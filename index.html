@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- <section>
+
+        <label for="weather">Select the weather type today: </label>
+        <select id="weather">
+            <option value="">--Make a choice--</option>
+            <option value="sunny">Sunny</option>
+            <option value="rainy">Rainy</option>
+            <option value="snowing">Snowing</option>
+            <option value="overcast">Overcast</option>
+        </select>
+
+        <p>hi</p>
+    </section> -->
+
+    <!-- <section>
+      <label for="theme">select a color</label>
+      <select id="theme">
+        <option value="white">white</option>
+        <option value="black">black</option>
+      </select>
+
+      <p>This is my website</p>
+    </section> -->
+
+    <section>
+      <h1>Print the id between 1 to 10</h1>
+      <input id="num" placeholder="Enter number" />
+      <p id="demo"></p>
+      <p id="demo2">Rudra</p>
+
+      <button onclick="validateNumber()">click</button>
+      <button onclick="document.getElementById('demo2').style.color = 'red'">
+        changing color
+      </button>
+    </section>
+    <section>
+      <p id="demo3">show and hide this text</p>
+      <button
+        onclick="document.getElementById('demo3').style.visibility = 'visible'"
+      >
+        show text
+      </button>
+      <button
+        onclick="document.getElementById('demo3').style.visibility = 'hidden'"
+      >
+        hide text
+      </button>
+    </section>
+    <br />
+    <section>
+      Enter your name: <input type="text" id="fname" oninput="upperCase()" />
+      <p>
+        When you write in the input field, a function is triggered to transform
+        the input to upper case.
+      </p>
+    </section>
+    <section>
+      <h1 id="id01">My First Page <span>- Subtitle</span></h1>
+      <p id="id02"></p>
+    </section>
+
+    <section>
+      <div id="exampleDiv">
+        <p>This is the content of the div.</p>
+      </div>
+
+      <p id="outputParagraph">
+        Click the button to see the outer HTML of the div.
+      </p>
+
+      <button onclick="showOuterHTML()">Show Outer HTML</button>
+    </section>
+
+    <section>
+      <p id="demo4"></p>
+    </section>
+
+    <section>
+      <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+      </div>
+      <button onclick="removeElement()">Remove Element</button>
+    </section>
+
+    <section>
+      <p>Hello World!</p>
+
+      <p>Hello Norway!</p>
+
+      <p id="demo"></p>
+    </section>
+    <section>
+      <div id="parent">
+        <p>This is a paragraph.</p>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>UserName</th>
+            <th>Website</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody id="user-data"></tbody>
+      </table>
+    </section>
+    <section>
+      <button onclick="getDetails()">Get Details</button>
+    </section>
+    <section>
+      <form>
+        <label for="choose"
+          >Would you prefer a banana or cherry? (required)</label
+        >
+        <input id="choose" name="i-like" required />
+        <button>Submit</button>
+      </form>
+    </section>
+    <script src="fetchApi.js"></script>
+  </body>
+</html>
