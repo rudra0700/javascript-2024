@@ -1,7 +1,7 @@
 {
     // primtitive type are basic type that like string , number , boolean and non primitive are the complex type that made using this basic SVGUnitTypes(primitive types)
     
-    // primitive data types works with stack memory
+    // primitive data types works with stack memory, non primitives data types works with heap memory
 
     //pass by value types
     let count = 10
@@ -21,7 +21,7 @@
         name: "alex"
     }
     user = employee
-    // console.log(user === employee) // false
+    // console.log(user === employee) // true
 
     employee.name = "rudra"
     // console.log(user)
@@ -37,7 +37,7 @@
         name: "tata"
     }
     let car2 = {
-        name: "tata"
+        name: "toyota"
     }
 
     car1 = car2
@@ -63,7 +63,7 @@
 }
 
 {
-    // But spread operator does not work while the object has an another object as a property. it means an object has a property and that property is itself an object
+    // But spread operator does not work while the object has an another object as a property. it means an object has a property and that property itself is an object
 
     let user = {
         name: "rudra",
@@ -106,7 +106,7 @@
     let nestedArray = [[1, 2], [3, 4], [5, 6]];
     // console.log("original array",nestedArray)
 
-    // modifyNestedObject(nestedArray)
+    modifyNestedObject(nestedArray)
     // console.log("modifying array: " , nestedArray)
     // console.log(nestedArray)
 }
@@ -116,10 +116,10 @@
     let nestedArray = [[1, 2], [3, 4], [5, 6]];
 
     let cloneNestedArray = nestedArray.map((item) => [...item])
-    // console.log(nestedArray)
-    // console.log(cloneNestedArray[0][0] = 100)
-    // console.log(cloneNestedArray)
-    // console.log(nestedArray)
+    console.log(nestedArray)
+    console.log(cloneNestedArray[0][0] = 100)
+    console.log(cloneNestedArray)
+    console.log(nestedArray)
 
 }
 
@@ -169,4 +169,7 @@
     //  console.log("modifying array: ", result)
     //  console.log("original array : ", nestedArray)   
 }
+
+
+
 
